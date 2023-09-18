@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archittam</title>
+    <link rel="stylesheet" href="/css/auth.css">
+    <link rel="stylesheet" href="/css/boiler.css">
+</head>
+<body>  
+    <main> 
+        <div id="forms-container">   
+            <div class="form-container" id="signUp-container">
+                <h1>Sign Up</h1>
+                <form action="/users/createUser" method="post">
+                    <input type="text" name="username" placeholder="Enter your name"><br>
+                    <input type="email" name="email" placeholder="Enter your mail address"><br>
+                    <input type="password" name="password" placeholder="Enter password"><br>
+                    <input type="password" name="confirmPassword" placeholder="Enter confirm password"><br>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container" id="signIn-container">
+                <h1>Sign In</h1>
+                <form action="/users/createSession" method="post">
+                    <input type="email" name="email" placeholder="Enter your email address"><br>
+                    <input type="password" name="password" placeholder="Enter your password">
+                    <button type="submit">Sign In</button>
+                </form>
+                <div class="or-container">
+                    <div></div>
+                    <span>or</span>
+                    <div></div>
+                </div>
+                <button class="btn">Sign in with Google</button>
+            </div>
+        </div>
+    </main>
+
+  
+</body>
+</html>

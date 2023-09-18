@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin- addProduct</title>
+    <link rel="stylesheet" href="/css/admin/addProduct.css">
+    <link rel="stylesheet" href="/css/boiler.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>admin Panel</h1>
+        </div>
+        <div class="nav">
+            <div>
+                <a href="/"><h3>Orders</h3></a>
+            </div>
+            <div>
+                <a href="/admin/addProduct"><h3>Add Products</h3></a>
+            </div>
+            <div>
+                <a href="/"><h3>All Products</h3></a>
+            </div>
+            <div>
+                <a href="/"><h3>Reports</h3></a>
+            </div>
+            <div>
+                <a href="/"><h3>Users</h3></a>
+            </div>
+        </div>
+    </header>
+
+    <div>
+        <form>
+            <div id="i1001">
+                <label for="productId">SKU1</label>
+                <input type="text" name="productId" id="productId" placeholder="sku parameter">
+                <label for="productName">Title</label><br>
+                <input type="text" name="productName" placeholder="couple kurta and saree">
+                <label for="productDes">Description</label>
+                <textarea name="productDes" cols="30" rows="5" placeholder="Enter product description here"></textarea>
+            </div>
+            
+            <div id="i1002">
+                <label for="images">Upload Media</label>
+                <button  type="button" onclick="addinput()">Add image files</button><br>
+                <!-- <div class="input-container">
+                    <input type="text" name="images[]">
+                    <ion-icon name="close-outline" class="close-icon"></ion-icon>
+                </div> -->
+                
+            </div>
+
+            <div id="i1003">
+                <p>Pricing</p>
+                <div>
+                    <label for="mrp">MRP</label>
+                    <div class="input-field"><span>₹</span><input type="number" name="mrp" placeholder="0000"></div>
+                </div>
+                <div>  
+                    <label for="salePrice">Selling Price</label>
+                    <div class="input-field"><span>₹</span><input type="number" name="salePrice" placeholder="0000"></div>
+                </div>
+            </div>
+
+            <div id="i1004">
+                <p>varients</p>
+                <div id="inner1004-1">
+                </div>
+                <div id="inner1004-2">
+                    <ion-icon name="add-circle-outline" id="inner1004-2-btn1" class="icon"></ion-icon> 
+                    <button type="button" id="inner1004-2-btn2">Generate Table</button>
+                </div>
+            </div>
+
+            <div id="i1005">
+                <p>Edit Variants</p>
+                <div id="variantsTableContainer">
+                    
+                </div>
+            </div>
+            
+            <button type="submit">Add Product</button>
+        </form>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/script/admin/addProduct.js"></script>
+</body>
+</html>

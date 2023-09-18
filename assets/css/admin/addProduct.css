@@ -1,0 +1,157 @@
+header{
+    width: 100vw;
+    height: 50px;
+    background-color: var(--dark-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header > div{
+    margin: 0 2rem;
+}
+
+.nav{
+    display: flex;
+}
+.nav div{
+    margin:0 2rem;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.nav h3{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    color: var(--text-color2);
+}
+
+form > div{
+    width: 40%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid var(--border-color2);
+    border-radius: 10px;
+}
+
+form label{
+    font-size: 0.8rem;
+}
+
+#i1001 > input, #i1001 > textarea{
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#i1002 .icon{
+    transition: all 0.5s ;
+}
+
+#i1002 .icon:hover{
+    transform: rotate(180deg);
+}
+
+#i1002 input {
+    width: 90%;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    margin-right: 1rem;
+}   
+
+
+#i1002 button{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+    appearance: textfield; /* Other modern browsers */
+}
+
+#i1003{
+    display: flex;
+}
+
+#i1003 > div{
+    margin: 1rem;
+    margin-top: 2rem;
+    width: 25%;
+}
+
+#i1003 .input-field{
+    border: 1px solid var(--border-color1);
+    border-radius: 5px;
+    margin: 0.4rem 0;
+    padding: 5px 10px;
+}
+
+
+#i1003 input{
+    width: 70%;
+    border: none;
+    outline: none;
+}
+
+#i1004 .icon{
+    font-size: 1rem;
+    top: 3px;
+}
+
+#inner1004-1 .icon{
+    margin-left: 1rem;
+    right: 0;
+}
+
+#inner1004-1 .input-field-container{
+    width: 80%;
+    margin: 1rem 0 1rem 2rem;
+}
+
+#inner1004-2{
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+#inner1004-2:hover{
+    color: var(--text-color3);
+}
+
+#i1005 table{
+    border-collapse: collapse;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+#i1005 td, #i1005 th{
+    border: 1px solid var(--border-color2);
+    padding: 5px 10px;
+    text-align: center;
+}
+
+#variantsTableContainer{
+    overflow-x: scroll;
+}
+
+
+#i1005 .fixed-width1{
+    width: 200px;
+}
+
+#i1005 .fixed-width2{
+    width: 100px;
+}
